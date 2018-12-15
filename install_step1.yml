@@ -1,6 +1,7 @@
 ---
-- hosts: localhost
+- hosts: server21
   gather_facts: no
-  connection: local
+  connection: ssh
   tasks:
-  - shell: sleep 3600
+  - shell: sleep 15
+  - setup:
