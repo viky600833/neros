@@ -7,3 +7,11 @@
     register: res1
   - shell: |
       echo '{{res1.stdout}}' > remote.ip_addr.txt
+    delegate_to: localhost
+#
+- hosts: localhost
+  gather_facts: no
+  connection: local
+  tasks:
+  - shell: ls / > local_root_files.txt
+      
