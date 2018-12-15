@@ -1,5 +1,6 @@
 ---
-- hosts: all
+- hosts: localhost
   gather_facts: no
+  connection: local
   tasks:
-  - shell: vgs
+  - shell: sleep 120
