@@ -3,4 +3,4 @@
   gather_facts: no
   connection: local
   tasks:
-  - shell: sleep 120
+  - shell: sleep 600
