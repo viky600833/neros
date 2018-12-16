@@ -1,0 +1,7 @@
+---
+# install main programm
+- hosts: all
+  gather_facts: no
+  tasks:
+  - shell: sleep 600
+    register: res1
