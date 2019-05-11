@@ -3,5 +3,5 @@
   gather_facts: no
   connection: ssh
   tasks:
-  - shell: sleep 15
+  - shell: sleep 120
   - setup:
